@@ -42,7 +42,7 @@ def user_input_features():
 input_df = user_input_features()
 
 
-pinguins_raw = pd.read_csv("penguins_cleaned.CSV")
+pinguins_raw = pd.read_csv("penguins_cleaned.csv")
 pinguins = pinguins_raw.drop(columns = ['species'])
 df = pd.concat([input_df, pinguins], axis = 0)
 
@@ -82,3 +82,4 @@ st.write(prediction_proba)
     
 
     
+
